@@ -1,10 +1,9 @@
-provider "azurerm" {
+provider "aws" {
   
 }
 
-# Deploy a resource group to azure
-
-resource "azurerm_resource_group" "rg" {
-  name     = var.resource_group_name
-  location = var.location
+# deploy a simple ec2 instance
+resource "aws_instance" "example" {
+  ami           = "ami-0c1a7f89451184c8b"
+  instance_type = "t2.micro"
 }
