@@ -35,7 +35,7 @@ jobs:
         with:
           #soft_fail: true
           api-key: ${{ secrets.BC_API_KEY }}
-          external_checks_dirs: './checkov_custom_checks'
+          external_checks_dirs: "${{ github.workspace }}/checkov_custom_checks"
           # directory with infrastructure code to scan
           #directory: # optional, default is .
           # Run scan only on a specific check identifier (comma separated)
