@@ -1,0 +1,13 @@
+metadata:
+  name: "Check that all resources are tagged with the key - env"
+  id: "CUSTOM_AWS_1"
+  category: "GENERAL_SECURITY"
+  guideline: "Please add the key - env to all resources"
+scope:
+  provider: aws
+definition:
+  cond_type: attribute
+  resource_types:
+    - aws_instance
+  attribute: iam_instance_profile
+  operator: exists
