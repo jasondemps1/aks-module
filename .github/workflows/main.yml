@@ -51,7 +51,7 @@ jobs:
           # do not return an error code if there are failed checks
           #soft_fail: # optional
           # run only on a specific infrastructure
-          #framework: # optional
+          framework: sca_package
           # comma separated list of external (custom) checks directories
           #external_checks_dirs: # optional
           # comma separated list of external (custom) checks repositories
